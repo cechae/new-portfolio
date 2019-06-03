@@ -24,7 +24,7 @@
     width: 55%;
     padding-left: 7%;
     padding-right: 15%;
-    margin-bottom: 18%;
+    margin-bottom: 16%;
     margin-top: 20%;
 }
 .section-about .icon-container {
@@ -52,7 +52,7 @@
 /*Projects*/
 
 .section-projects {
-    padding: 1% 5%;
+    padding: 1% 4%;
 }
 
 .section-projects h1 {
@@ -63,24 +63,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 1% 7%;
+    padding: 1% 3%;
 }
 .section-projects .gallery-container .item {
-    width: 40%;
-    padding: 2% 3%;
+    width: 27%;
+    padding: 1% 1%;
     margin: 0 2%;
     margin-bottom: 10%;
 }
 .section-projects .item h5 {
     font-size: 1.4rem;
+    margin: 5% 0;
 }
 .section-projects .item img {
     width: 85%;
-    height: 200px;
+    height: auto;
 }
 #colorgame {
-    width: 70%;
-    height: 200px;
+    width: 60%;
+    height: auto;
 }
 
 .section-projects .button-container {
@@ -89,16 +90,25 @@
     justify-content: space-around;
 }
 .button-container .item-button {
+    width: 35%;
     border: 1.5px solid black;
-    padding: 1.5% 1.5%;
+    padding: 2% 2%;
     margin: 2% 2%;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
+    font-weight: 500;
     color: black;
     text-decoration: none;
-}
-.item-button:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
     background-color: gray;
     color: white;
+}
+.item-button:hover {
+    font-weight: 500;
+    background-color: #EEEEEE;
+    color: black;
 }
 
 
@@ -169,14 +179,21 @@
         width: 50%;
         height: auto;
     }
+    .section-projects .button-container .item-button {
+        font-size: 0.9rem;
+    }
+    .section-projects 
     #colorgame {
         width: 50%;
-        height: 28%;
+        height: 30%;
     }
 
 }
 
 @media (min-width: 2000px) {
+    .section-about {
+        background-size: cover;
+    }
     .section-projects {
         padding: 1% 10%;
     }

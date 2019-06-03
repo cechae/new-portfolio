@@ -29,7 +29,7 @@ class Projects extends Component {
                 target="_blank"
               >
                 {" "}
-                Preview This Project{" "}
+                Preview{" "}
               </a>
 
               <a
@@ -90,7 +90,7 @@ class Projects extends Component {
                 target="_blank"
               >
                 {" "}
-                Preview This Project{" "}
+                Preview {" "}
               </a>
 
               <a
