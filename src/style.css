@@ -1,0 +1,187 @@
+.App {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.section-about, .section-projects {
+    background-color: #EEEEEE;
+    
+}
+
+
+/*About*/
+.section-about {
+    background-image: url('./about-img.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 50px;
+    height: max-content;
+}
+.section-about .container {
+    text-align: left;
+    width: 55%;
+    padding-left: 7%;
+    padding-right: 15%;
+    margin-bottom: 18%;
+    margin-top: 20%;
+}
+.section-about .icon-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.section-about .icon-container a {
+    font-size: 2.5rem;
+    margin-right: 5%;
+}
+.section-about .text-container {
+    margin-top: 10%;
+}
+.section-about h2 {
+    font-size: 3.5rem;
+    
+}
+.section-about h3 {
+    font-size: 1.5rem;
+}
+.section-about p {
+    font-size: 1.2rem;
+}
+
+/*Projects*/
+
+.section-projects {
+    padding: 1% 5%;
+}
+
+.section-projects h1 {
+    margin-bottom: 5%;
+}
+
+.section-projects .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1% 7%;
+}
+.section-projects .gallery-container .item {
+    width: 40%;
+    padding: 2% 3%;
+    margin: 0 2%;
+    margin-bottom: 10%;
+}
+.section-projects .item h5 {
+    font-size: 1.4rem;
+}
+.section-projects .item img {
+    width: 85%;
+    height: 200px;
+}
+#colorgame {
+    width: 70%;
+    height: 200px;
+}
+
+.section-projects .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.button-container .item-button {
+    border: 1.5px solid black;
+    padding: 1.5% 1.5%;
+    margin: 2% 2%;
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: none;
+}
+.item-button:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+
+/* Item container shadow */
+.box-shadow {
+    -moz-box-shadow:    inset 0 0 5px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    box-shadow:         inset 0 0 5px #000000;
+ }
+
+/* Button shadow*/
+.shadow {
+    -moz-box-shadow:    1px 1px 1px 1px #ccc;
+    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+    box-shadow:         1px 1px 1px 1px #ccc;
+}
+
+
+
+@media (max-width: 767px) {
+
+    /* About */
+    .section-about {
+        background-size: contain;
+        padding-right: 40px;
+    }
+    .section-about h2 {
+        font-size: 1.5rem;
+    }
+    .section-about h3 {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .section-about .desc p {
+        font-size: 0.9rem;
+    }
+    .section-about .container {
+        width: 95%;
+        padding: 0 0 0 16%;
+        margin: 20% 3%;
+    }
+    .section-about .icon-container {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .section-about .icon-container a {
+        font-size: 2.0rem;
+        margin-right: 8%;
+    }
+
+
+
+   /* Projects */
+    .section-projects {
+        padding: 10% 6%;
+    }
+    .section-projects .item h5 {
+        font-size: 1.0rem;
+    }
+
+    .section-projects .gallery-container .item {
+        width: 100%;
+        padding: 2% 2.5%;
+        margin-bottom: 5%;
+    }
+    .section-projects .item img {
+        width: 50%;
+        height: auto;
+    }
+    #colorgame {
+        width: 50%;
+        height: 33%;
+    }
+
+}
+
+@media (min-width: 2000px) {
+    .section-projects {
+        padding: 1% 10%;
+    }
+    .gallery-container {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+}
