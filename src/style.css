@@ -7,8 +7,6 @@
     background-color: #EEEEEE;
     
 }
-
-
 /*About*/
 .section-about {
     background-image: url('./about-img.jpg');
@@ -77,7 +75,7 @@
 }
 .section-projects .item img {
     width: 85%;
-    height: auto;
+    height: 50%;
 }
 #colorgame {
     width: 60%;

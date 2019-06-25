@@ -44,6 +44,7 @@ class Projects extends Component {
             </div>
           </div>
 
+
           <div className="item box-shadow">
             <h5> Weather App </h5>
             <img
@@ -59,7 +60,51 @@ class Projects extends Component {
             <div className="button-container">
               <a
                 className="item-button box-shadow"
+                href="https://weather-app0.herokuapp.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {" "}
+                Preview{" "}
+              </a>
+
+              <a
+                className="item-button box-shadow"
                 href="https://github.com/spicysos/weather"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {" "}
+                View Detail{" "}
+              </a>
+            </div>
+          </div>
+
+          <div className="item box-shadow">
+            <h5> Matching Card Memory Game </h5>
+            <img
+              className=""
+              src={require("./matching-game.png")}
+              alt="matching game"
+            />
+            <p class="card-text">
+              {" "}
+              A game where a player needs to turn over a pair of matching cards {" "}
+            </p>
+
+            <div className="button-container">
+            <a
+                className="item-button box-shadow"
+                href="https://matching0game.herokuapp.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {" "}
+                Preview{" "}
+              </a>
+              <a
+                className="item-button box-shadow"
+                href="https://github.com/spicysos/matching-game"
                 rel="noopener noreferrer"
                 target="_blank"
               >
