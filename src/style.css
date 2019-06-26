@@ -91,7 +91,7 @@
 .section-projects .button-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .button-container .item-button {
     width: 35%;
@@ -170,7 +170,7 @@
     }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 640px) {
 
     /* About */
     .section-about {
