@@ -17,8 +17,7 @@ class Projects extends Component {
             />
             <p>
               {" "}
-              A game app that plays percussion sounds to keyboard inputs built
-              with HTML, CSS and JavaScript{" "}
+              An app that plays percussion sounds to keyboard inputs.{" "}
             </p>
 
             <div className="button-container">
@@ -83,7 +82,7 @@ class Projects extends Component {
           <div className="item box-shadow">
             <h5> Matching Card Memory Game </h5>
             <img
-              className=""
+              className="memory-game"
               src={require("./matching-game.png")}
               alt="matching game"
             />
@@ -124,7 +123,7 @@ class Projects extends Component {
             <p>
               {" "}
               A color game app where the player guesses the right color, given
-              rgb values, built with HTML, CSS and JavaScript{" "}
+              rgb values. {" "}
             </p>
 
             <div className="button-container">
@@ -159,8 +158,7 @@ class Projects extends Component {
             />
             <p class="card-text">
               {" "}
-              An interactive game that receives keyboard inputs, built with Java
-              and Swing library.{" "}
+              An interactive game that receives keyboard inputs. {" "}
             </p>
 
             <div className="button-container">
