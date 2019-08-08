@@ -6,7 +6,6 @@ class Projects extends Component {
     return (
       <div className="section-projects">
         <h1> Projects </h1>
-
         <div className="gallery-container">
           <div className="item box-shadow">
             <h5> Percussion Game </h5>
@@ -38,6 +37,32 @@ class Projects extends Component {
                 rel="noopener noreferrer"
               >
                 {" "}
+                View Detail
+              </a>
+            </div>
+          </div>
+          
+          <div className="item box-shadow">
+            <h5> To-Do App </h5>
+            <img
+              className=""
+              src={require("./todo.png")}
+              alt="Todo-App"
+            />
+            <p> A To-Do app that stores your to-do in MongoDB using Stitch.{" "}</p>
+            <div className="button-container">
+              <a
+                className="item-button box-shadow"
+                href="https://github.com/spicysos/project-stitch"
+                rel="noopener noreferrer"
+                target="_blank"
+              >Preview</a>
+              <a
+                className="item-button box-shadow"
+                href="https://github.com/spicysos/project-stitch"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 View Detail
               </a>
             </div>

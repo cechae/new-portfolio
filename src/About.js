@@ -14,8 +14,7 @@ class About extends Component {
                         <div className="desc">
                             <p>
                                 I graduated from University of Pennsylvania in December 2018. 
-                                I'm skilled in HTML, CSS, JavaScript, React, Bootstrap4, Java, and MatLab.
-
+                                I'm skilled in HTML, CSS, JavaScript, React, Bootstrap, React-Bootstrap, Java, and MatLab.
                             </p>
                         </div>
                     </div>
