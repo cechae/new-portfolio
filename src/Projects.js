@@ -53,7 +53,7 @@ class Projects extends Component {
             <div className="button-container">
               <a
                 className="item-button box-shadow"
-                href="https://github.com/spicysos/project-stitch"
+                href="https://todo-stitch.herokuapp.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >Preview</a>
