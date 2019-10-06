@@ -27,7 +27,7 @@ class Projects extends Component {
                 target="_blank"
               >
                 {" "}
-                Preview{" "}
+                View{" "}
               </a>
 
               <a
@@ -37,7 +37,7 @@ class Projects extends Component {
                 rel="noopener noreferrer"
               >
                 {" "}
-                View Detail
+                Source code
               </a>
             </div>
           </div>
@@ -56,14 +56,14 @@ class Projects extends Component {
                 href="https://todo-stitch.herokuapp.com/"
                 rel="noopener noreferrer"
                 target="_blank"
-              >Preview</a>
+              >View</a>
               <a
                 className="item-button box-shadow"
                 href="https://github.com/spicysos/project-stitch"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Detail
+                Source Code
               </a>
             </div>
           </div>
@@ -89,7 +89,7 @@ class Projects extends Component {
                 target="_blank"
               >
                 {" "}
-                Preview{" "}
+                View{" "}
               </a>
 
               <a
@@ -99,7 +99,7 @@ class Projects extends Component {
                 target="_blank"
               >
                 {" "}
-                View Detail{" "}
+                Source Code{" "}
               </a>
             </div>
           </div>
@@ -124,7 +124,7 @@ class Projects extends Component {
                 target="_blank"
               >
                 {" "}
-                Preview{" "}
+                View{" "}
               </a>
               <a
                 className="item-button box-shadow"
@@ -133,7 +133,7 @@ class Projects extends Component {
                 target="_blank"
               >
                 {" "}
-                View Detail{" "}
+                Source code{" "}
               </a>
             </div>
           </div>
@@ -159,7 +159,7 @@ class Projects extends Component {
                 target="_blank"
               >
                 {" "}
-                Preview {" "}
+                View {" "}
               </a>
 
               <a
@@ -169,7 +169,7 @@ class Projects extends Component {
                 rel="noopener noreferrer"
               >
                 {" "}
-                View Detail{" "}
+                Source Code{" "}
               </a>
             </div>
           </div>
@@ -194,7 +194,7 @@ class Projects extends Component {
                   target="_blank"
                 >
                   {" "}
-                  View Detail{" "}
+                  Source Code{" "}
                 </a>
             </div>
           </div>
