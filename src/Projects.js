@@ -11,7 +11,7 @@ class Projects extends Component {
             <h5> Percussion Game </h5>
             <img
               className=""
-              src={require("./percussion-img.png")}
+              src={require("./img/percussion-img.png")}
               alt="percussion game"
             />
             <p>
@@ -46,7 +46,7 @@ class Projects extends Component {
             <h5> To-Do App </h5>
             <img
               className=""
-              src={require("./todo.png")}
+              src={require("./img/todo.png")}
               alt="Todo-App"
             />
             <p> A To-Do app that stores your to-do in MongoDB using Stitch.{" "}</p>
@@ -73,7 +73,7 @@ class Projects extends Component {
             <h5> Weather App </h5>
             <img
               className=""
-              src={require("./weather.png")}
+              src={require("./img/weather.png")}
               alt="weather app"
             />
             <p class="card-text">
@@ -108,7 +108,7 @@ class Projects extends Component {
             <h5> Matching Card Memory Game </h5>
             <img
               className="memory-game"
-              src={require("./matching-game.png")}
+              src={require("./img/matching-game.png")}
               alt="matching game"
             />
             <p class="card-text">
@@ -142,7 +142,7 @@ class Projects extends Component {
             <h5> Color Game App </h5>
             <img
               id="colorgame"
-              src={require("./colorgame.png")}
+              src={require("./img/colorgame.png")}
               alt="color game"
             />
             <p>
@@ -178,7 +178,7 @@ class Projects extends Component {
             <h5> Java Game </h5>
             <img
               id="javagame"
-              src={require("./javagame.png")}
+              src={require("./img/javagame.png")}
               alt="java game"
             />
             <p class="card-text">

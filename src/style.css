@@ -1,29 +1,63 @@
 .App {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+
 }
 
 .section-about, .section-projects {
     background-color: #EEEEEE;
     
 }
+.section-projects {
+    padding: 80px 10%;
+}
 /*About*/
-.section-about {
-    background-image: url('./about-img.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: flex-end;
-    padding: 30px 50px;
-    height: max-content;
+.section-about .bg-img {
+    background: url("./img/bg4.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  
+
+}
+.carousel-control-prev {
+
+}
+.section-about .outer-carousel-container {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+.section-about .carousel-container {
+    /* display: inline-block; */
+}
+.section-about .carousel-indicators {
+    display: none;
+}
+.section-about .navbar.navbar-expand-lg {
+    background-image: linear-gradient(to bottom,#222222,#111111);
+    box-shadow: 0 1px 10px rgba(0,0,0,.1);
+    min-height: 4.75em;
+}
+.section-about .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.55); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 68px 102px;
+    text-align: center;
 }
 .section-about .container {
     text-align: left;
-    width: 55%;
-    padding-left: 7%;
-    padding-right: 15%;
-    margin-bottom: 16%;
-    margin-top: 20%;
+    /* padding: 4% 14%; */
 }
 .section-about .icon-container {
     margin-top: 5%;
@@ -34,10 +68,11 @@
     margin-right: 5%;
 }
 .section-about .text-container {
-    margin-top: 10%;
+    margin-top: 0;
 }
 .section-about h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
     
 }
 .section-about h3 {
@@ -48,11 +83,6 @@
 }
 
 /*Projects*/
-
-.section-projects {
-    padding: 1% 4%;
-}
-
 .section-projects h1 {
     margin-bottom: 5%;
 }
