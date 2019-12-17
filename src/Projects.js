@@ -5,7 +5,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="section-projects">
-        <h1> Projects </h1>
+        <h1> Works </h1>
         <div className="gallery-container">
           <div className="item box-shadow">
             <h5> Percussion Game </h5>
