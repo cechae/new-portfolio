@@ -171,9 +171,15 @@
 }
 .section-works .row2 {
     min-height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    display: flex;
 }
 .section-works .filter-div .icon {
-    font-size: 4rem;
+    font-size: 80px;
+    padding: 0;
 }
 .section-works .filter-div.percussion {
     background: #1bac91;
@@ -208,7 +214,7 @@
   height: auto;
   text-align: center;
   margin: 0;
-  padding: 20px;
+  padding: 25px 20px;
   display: none; /* Hidden by default */
 }
 
