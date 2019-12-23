@@ -6,6 +6,7 @@ import Footer from './Footer';
 import About from './About';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
+import Works from './Works';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <div className="App">
       <About />
       <AboutMe />
-      <Projects />
+      <Works />
       <Footer />
 
     </div>

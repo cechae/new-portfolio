@@ -114,7 +114,7 @@
 }
 
 /*Projects*/
-.section-projects h1 {
+/* .section-projects h1 {
     margin-bottom: 5%;
 }
 
@@ -153,7 +153,90 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+} */
+
+
+/* section Works */
+.section-works .title {
+    margin-top: 60px;
 }
+.section-works .title h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.section-works .row1, .section-works .row2 {
+    margin: 0;
+    display: block;
+    padding: 1% 5%;
+}
+.section-works .row2 {
+    min-height: 200px;
+}
+.section-works .filter-div .icon {
+    font-size: 4rem;
+}
+.section-works .filter-div.percussion {
+    background: #1bac91;
+}
+.section-works .filter-div.weather {
+    background: #c8c72a;
+}
+.section-works .filter-div.todo {
+    background: #77c277;
+}
+.section-works .filter-div.memory {
+    background: #808080;
+}
+.section-works .filter-div.color {
+    background: #e06d5e;
+}
+.section-works .filter-div.pikachu {
+    background: #B19F8D;
+}
+.section-works .filter-div.beer {
+    background: #7ab5c9;
+}
+
+.section-works .row .containerbox {
+    overflow: hidden;
+    padding: 0;
+}
+.section-works .filter-div {
+  float: left;
+  color: #ffffff;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.section-works .show {
+    display: block;
+}
+/* Style the buttons */
+.section-works .clearfix li {
+    border: none;
+    outline: none;
+    margin: 0 8px;
+    padding: 8px 12px;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+.section-works .clearfix li:hover {
+    background-color: #1bac91;
+    color: #fff;
+}
+  /* Add a dark background to the active button */
+.section-works .clearfix .li.active {
+    background-color: #666;
+    color: white;
+}
+
+
+
 .button-container .item-button {
     width: 35%;
     border: 1.5px solid black;
