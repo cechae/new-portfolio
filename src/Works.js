@@ -9,16 +9,13 @@ class Works extends Component {
         let btnContainer = document.getElementById("clearfix");
         var btns = btnContainer.getElementsByClassName("btn");
         for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
+          this.removeClass(btns[i], "active");
         }
 
     }
     // Hide elements that are not selected
     removeClass = (element, name) => {
+      console.log("removing...", name, element)
         let i, arr1, arr2;
         arr1 = element.className.split(" ");
         arr2 = name.split(" ");
@@ -30,6 +27,7 @@ class Works extends Component {
         element.className = arr1.join(" ");
     }
     addClass = (element, name) => {
+      console.log("adding ...", name, element)
         let i, arr1, arr2;
         arr1 = element.className.split(" ");
         arr2 = name.split(" ");
@@ -42,17 +40,25 @@ class Works extends Component {
 
 
     filterSelection = (c) => {
-        let x, i;
-        x = document.getElementsByClassName("filter-div");
-        if (c == "all") c = "";
+        let d = c;
+        let x = document.getElementsByClassName("filter-div");
+        if (d == "all") d = "";
         // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-        for (i = 0; i < x.length; i++) {
+        for (let i = 0; i < x.length; i++) {
           this.removeClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) {
+          if (x[i].className.indexOf(d) > -1) {
             this.addClass(x[i], "show");
           } 
         }
-
+        console.log(c)
+        let elmt = document.getElementsByClassName("btn");
+        
+        for (let i = 0; i<elmt.length; i++) {
+          this.removeClass(elmt[i], "active");
+          if (elmt[i].className.indexOf(c) > -1) {
+            this.addClass(elmt[i], "active")
+          }
+        }
 
         // switch (type) {
         //     case 'all':
@@ -84,33 +90,34 @@ class Works extends Component {
                   <div className="container-box">
                       <div className="portfolio-overlay filter-div all react percussion">
                           {/* <div><p>Percussion Game</p></div> */}
-                          <i className="fas fa-drum icon"></i>
+                            <i className="fas fa-drum icon shown"></i>
+                            <span className="hidden">Percussion Game</span>
                       </div>
                       
                       <div className="portfolio-overlay filter-div all react weather">
-                        {/* <div><p>Weather App</p></div> */}
-                        <i className="far fa-sun-cloud icon"></i>
+                        <i className="far fa-sun-cloud icon shown"></i>
+                        <span className="hidden">Weather App</span>
                       </div>
                       <div className="portfolio-overlay filter-div all react todo">
-                        {/* <div><p>To-Do App</p></div> */}
-                        <i className="fas fa-clipboard-list icon"></i>
+                        <i className="fas fa-clipboard-list icon shown"></i>
+                        <span className="hidden">To-Do App</span>
                       </div>
                       <div className="portfolio-overlay filter-div all react memory">
-                        {/* <div><p>Memory Game </p></div> */}
-                        <i className="fas fa-game-board icon"></i>
+                        <i className="fas fa-game-board icon shown"></i>
+                        <span className="hidden">Memory Game</span>
                       </div>
                       <div className="portfolio-overlay filter-div all vanilla color">
-                        {/* <div><p>Color Game </p></div> */}
-                        <i className="fas fa-palette icon"></i>
+                        <i className="fas fa-palette icon shown"></i>
+                        <span className="hidden">Color Game</span>
                       </div>
                       <div className="portfolio-overlay filter-div all java pikachu">
-                        {/* <div><p>Java Pikachu Game </p></div> */}
-                        <i className="far fa-alien-monster icon"></i>
+                        <i className="far fa-alien-monster icon shown"></i>
+                        <span className="hidden">Pikachu Game</span>
 
                       </div>
                       <div className="portfolio-overlay filter-div all react beer">
-                        {/* <div><p>Online BeerShop</p></div> */}
-                        <i className="fas fa-beer icon"></i>
+                        <i className="fas fa-beer icon shown"></i>
+                        <span className="hidden">Online BeerShop</span>
                       </div>
 
                   </div>
