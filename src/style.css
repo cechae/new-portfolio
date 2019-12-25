@@ -4,12 +4,8 @@
 
 }
 
-.section-about, .section-projects {
+.section-about {
     background-color: #EEEEEE;
-    
-}
-.section-projects {
-    padding: 80px 10%;
 }
 /*About*/
 .section-about .bg-img {
@@ -18,8 +14,6 @@
     height: 100vh;
     filter: blur(3px);
     -webkit-filter: blur(3px);
-  
-
 }
 #main {
     animation: 1s fadeIn;
@@ -134,7 +128,8 @@
     padding: 1% 5%;
 }
 .section-works .row2 {
-    padding: 1% 16%;
+    padding: 1% 14%;
+    margin: 0 auto;
 }
 .section-works .row2 {
     min-height: 210px;
@@ -235,8 +230,6 @@
     color: white;
 }
 
-
-
 .button-container .item-button {
     width: 35%;
     border: 1.5px solid black;
@@ -329,43 +322,8 @@
     top: 15px;
 }
 
-@media (max-width: 1286px) {
-    .section-projects .gallery-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: 0 8%;
-    }
-}
-@media (max-width: 1000px) {
-    .section-projects .gallery-container {
-        padding: 0 4%;
-    }
-    .section-projects .gallery-container .item {
-        width: 40%;
-        padding: 1% 1%;
-        margin: 0 2%;
-        margin-bottom: 10%;
-    }
-}
-@media (max-width: 800px) {
-    .section-projects .gallery-container {
-        padding: 0;
-    }
-}
-@media (max-width: 706px) {
-    .section-projects .gallery-container {
-        padding: 0;
-    }
-    .section-projects .gallery-container .item {
-        margin-left: 0;
-        margin-right: 0;
-        width: 45%;
-    }
-}
 
 @media (max-width: 640px) {
-
     /* About */
     .section-about {
         background-size: contain;
@@ -394,46 +352,12 @@
         font-size: 2.0rem;
         margin-right: 8%;
     }
-   /* Projects */
-    .section-projects {
-        padding: 10% 6%;
-    }
-    .section-projects .item h5 {
-        font-size: 1.0rem;
-    }
-    .item.box-shadow p {
-        font-size: 0.9rem;
-    }
-    .section-projects .item .memory-game {
-        height: 30%;
-    }
-
-    .section-projects .gallery-container .item {
-        width: 100%;
-        padding: 2% 2.5%;
-        margin-bottom: 5%;
-    }
-    .section-projects .item img {
-        width: 50%;
-        height: auto;
-    }
-    .section-projects .button-container .item-button {
-        font-size: 0.9rem;
-    }
-    .section-projects 
-    #colorgame {
-        width: 50%;
-        height: 30%;
-    }
 
 }
 
 @media (min-width: 2000px) {
     .section-about {
         background-size: cover;
-    }
-    .section-projects {
-        padding: 1% 10%;
     }
     .gallery-container {
         margin-left: 7%;
