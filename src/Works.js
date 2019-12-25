@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import "./style.css";
-
+import Modal from './Modal';
 class Works extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      modalNum: -1,
+    }
+  }
 
     componentDidMount = () => {
         this.filterSelection("all");
@@ -38,6 +44,13 @@ class Works extends Component {
         }
       }
 
+    showModal = (num) => {
+      this.setState({ modalNum: num})
+    }
+    setModalNum = (num) => {
+      this.setState({ modalNum: num})
+    }
+
 
     filterSelection = (c) => {
         let d = c;
@@ -50,7 +63,6 @@ class Works extends Component {
             this.addClass(x[i], "show");
           } 
         }
-        console.log(c)
         let elmt = document.getElementsByClassName("btn");
         
         for (let i = 0; i<elmt.length; i++) {
@@ -59,15 +71,6 @@ class Works extends Component {
             this.addClass(elmt[i], "active")
           }
         }
-
-        // switch (type) {
-        //     case 'all':
-        //         console.log("all selected")
-        //         break;
-        //     default:
-        //         console.log("something else")
-        //         break;
-        // }
     }
   render() {
     return (
@@ -75,6 +78,11 @@ class Works extends Component {
           <div className="title">
               <h2>Works</h2>
           </div>
+          <Modal
+            show={this.state.modalNum === -1 ? false : true}
+            onHide={() => this.setModalNum(-1)}
+            modalNum = {this.state.modalNum}
+          />
           <div className="row1">
             <div id="filters">
                 <ul className="clearfix" id="clearfix">
@@ -88,34 +96,34 @@ class Works extends Component {
           <div className="row2">
               <div id="portfolio-wrap">
                   <div className="container-box">
-                      <div className="portfolio-overlay filter-div all react percussion">
+                      <div className="portfolio-overlay filter-div all vanilla percussion" onClick={() => this.showModal(0)}>
                           {/* <div><p>Percussion Game</p></div> */}
                             <i className="fas fa-drum icon shown"></i>
                             <span className="hidden">Percussion Game</span>
                       </div>
                       
-                      <div className="portfolio-overlay filter-div all react weather">
+                      <div className="portfolio-overlay filter-div all react weather" onClick={() => this.showModal(1)}>
                         <i className="far fa-sun-cloud icon shown"></i>
                         <span className="hidden">Weather App</span>
                       </div>
-                      <div className="portfolio-overlay filter-div all react todo">
+                      <div className="portfolio-overlay filter-div all react todo"onClick={() => this.showModal(2)}>
                         <i className="fas fa-clipboard-list icon shown"></i>
                         <span className="hidden">To-Do App</span>
                       </div>
-                      <div className="portfolio-overlay filter-div all react memory">
+                      <div className="portfolio-overlay filter-div all react memory" onClick={() => this.showModal(3)}>
                         <i className="fas fa-game-board icon shown"></i>
                         <span className="hidden">Memory Game</span>
                       </div>
-                      <div className="portfolio-overlay filter-div all vanilla color">
+                      <div className="portfolio-overlay filter-div all vanilla color" onClick={() => this.showModal(4)}>
                         <i className="fas fa-palette icon shown"></i>
                         <span className="hidden">Color Game</span>
                       </div>
-                      <div className="portfolio-overlay filter-div all java pikachu">
+                      <div className="portfolio-overlay filter-div all java pikachu" onClick={() => this.showModal(5)}>
                         <i className="far fa-alien-monster icon shown"></i>
                         <span className="hidden">Pikachu Game</span>
 
                       </div>
-                      <div className="portfolio-overlay filter-div all react beer">
+                      <div className="portfolio-overlay filter-div all react beer" onClick={() => this.showModal(6)}>
                         <i className="fas fa-beer icon shown"></i>
                         <span className="hidden">Online BeerShop</span>
                       </div>
