@@ -226,7 +226,7 @@
 }
 .section-works .portfolio-overlay {
     padding: 30px;
-    transition: transform 1.5s; /* Animation */
+    transition: background-color 0.5s ease;; /* Animation */
     margin: 0 auto;
     cursor: pointer;
 }
@@ -245,6 +245,10 @@
 }
 .section-works .portfolio-overlay:hover .shown {
     display: none;
+}
+.section-works .filter-div:hover {
+    background: #005580;
+    border-color: #005580;
 }
 
 
@@ -314,6 +318,56 @@
     box-shadow:         1px 1px 1px 1px #ccc;
 }
 
+/* Modal */
+.project-modal .modal-footer {
+    border-top: none;
+}
+.modal-content {
+    text-align: center;
+}
+#modal-img-container .percussion {
+    width: 400px;
+}
+.project-modal .button-container {
+    margin: inherit;
+    width: auto;
+    padding: 10px;
+}
+.project-modal .button-container .item-button {
+    width: 100%;
+    padding: .375rem .75rem;
+    margin: 2% 2%;
+    font-size: 1.0rem;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    box-shadow: none;
+    border: 1px solid #1bac91;
+    background-color: #fff;
+    color: #1a917b;
+}
+.project-modal .button-container .item-button:hover {
+    background-color: #1bac91;
+    color: #fff;
+}
+.project-modal .btn-box {
+    display: flex;
+    justify-content: center;
+}
+.project-modal .button-container .item-button.src-link {
+    color: #28a745;
+    border-color: #28a745;
+    background-color: #fff;
+}
+.project-modal .button-container .item-button.src-link:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 15px;
+}
 
 @media (max-width: 1286px) {
     .section-projects .gallery-container {
