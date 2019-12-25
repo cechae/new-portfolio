@@ -94,8 +94,8 @@ class Works extends Component {
             </div>
           </div>
           <div className="row2">
-              <div id="portfolio-wrap">
-                  <div className="container-box">
+              {/* <div id="portfolio-wrap"> */}
+                  {/* <div className="container-box"> */}
                       <div className="portfolio-overlay filter-div all vanilla percussion" onClick={() => this.showModal(0)}>
                           {/* <div><p>Percussion Game</p></div> */}
                             <i className="fas fa-drum icon shown"></i>
@@ -129,9 +129,9 @@ class Works extends Component {
                       </div>
 
                   </div>
-              </div>
+              {/* </div> */}
 
-          </div>
+          {/* </div> */}
         
       </div>
     );
