@@ -272,9 +272,15 @@
 }
 
 /* Modal */
+.project-modal .modal-body {
+    padding: 1rem 6rem;
+}
 .project-modal .modal-footer {
     border-top: none;
 }
+.modalBody p{
+    padding: 0 1rem;
+} 
 .modal-content {
     text-align: center;
 }
@@ -321,6 +327,21 @@
     position: absolute;
     top: 15px;
 }
+
+/* section footer */
+.section-footer {
+    padding: 5%;
+    margin: 0 auto;
+}
+.section-footer .icon-bar a {
+    margin: 0 1%;
+    color: #1bac91;
+}
+.section-footer .icon-bar i {
+    font-size: 2rem;
+}
+
+
 
 
 @media (max-width: 640px) {
