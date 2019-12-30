@@ -18,7 +18,7 @@ const imgComp = [
     />),
     
     (<img
-        src={require("./img/weather.png")}
+        src={require("./img/weather2.png")}
         alt="weather app"
     />),
     (<img
