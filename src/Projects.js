@@ -73,7 +73,7 @@ class Projects extends Component {
             <h5> Weather App </h5>
             <img
               className=""
-              src={require("./img/weather.png")}
+              src={require("./img/weather2.png")}
               alt="weather app"
             />
             <p class="card-text">

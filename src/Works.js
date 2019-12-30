@@ -86,7 +86,7 @@ class Works extends Component {
                 <ul className="clearfix" id="clearfix">
                     <li className="all btn" onClick={() => this.filterSelection('all')}> All </li>
                     <li className="react btn" onClick={() => this.filterSelection('react')}> React </li>
-                    <li className="vanilla btn" onClick={() => this.filterSelection('vanilla')}> Vanilla JS</li>
+                    <li className="vanilla btn" onClick={() => this.filterSelection('vanilla')}> JavaScript</li>
                     <li className="java btn" onClick={() => this.filterSelection('java')}> Java </li>
                 </ul>
             </div>
