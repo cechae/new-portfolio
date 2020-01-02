@@ -367,6 +367,19 @@
         font-size: 2.0rem;
         margin-right: 8%;
     }
+    .section-works .filter-div {
+        width: 50%;
+    }
+    .section-works .filter-div .icon {
+        font-size: 54px;
+    }
+    #filters ul.clearfix {
+        padding-left: 0;
+    }
+    #filters .clearfix li {
+        margin: 0;
+    }
+
 
 }
 
