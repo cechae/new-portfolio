@@ -6,7 +6,22 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselItem from 'react-bootstrap/CarouselItem';
 
-
+{/* <p>
+                                I graduated from the University of Pennsylvania in December 2018. 
+                                I'm skilled in HTML, CSS, JavaScript, React, Bootstrap, React-Bootstrap, Java, and MatLab.
+                            </p> */}
+                            // <h1> Hello, my name is Chungeun, I'm a Front-end web developer based in NY. </h1>
+                            {/* <h3> CREATIVE AND PASSIONATE </h3> */}
+                            {/* <div className="outer-carousel-container">
+                                <Carousel className='carousel-container'>
+                                    <Carousel.Item>
+                                    <h3> CREATIVE AND PASSIONATE </h3>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                    <h3> SIMPLE AND RESPONSIVE WEBSITES </h3>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div> */}
 class About extends Component {
     render () {
         return (
@@ -31,28 +46,18 @@ class About extends Component {
                     </Navbar.Collapse>
                 </Navbar>
                 <div className="container" id="main">
-                    <div className="text-container bg-text">
+                    <div className="title-text-container bg-text">
                         <div className="title-container">
-                            <h2> Hello, my name is Chungeun, I'm a Front-end web developer based in NY. </h2>
-                            {/* <h3> CREATIVE AND PASSIONATE </h3> */}
-                            <div className="outer-carousel-container">
-                                <Carousel className='carousel-container'>
-                                    <Carousel.Item>
-                                    <h3> CREATIVE AND PASSIONATE </h3>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                    <h3> SIMPLE AND RESPONSIVE WEBSITES </h3>
-                                    </Carousel.Item>
-                                </Carousel>
-                            </div>
-
+                            Hi, I'm a Front-end web developer.
 
                         </div>
                         <div className="desc">
-                            {/* <p>
-                                I graduated from the University of Pennsylvania in December 2018. 
-                                I'm skilled in HTML, CSS, JavaScript, React, Bootstrap, React-Bootstrap, Java, and MatLab.
-                            </p> */}
+
+                            Specializing in building rich interactive web apps
+                            
+                        </div>
+                        <div className="desc-small">
+                            skilled in HTML5, CSS, ES6+ JavaScript, Bootstrap, React, React Hooks, JQuery, Git and MongoDB
                         </div>
                     </div>
 
