@@ -5,6 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselItem from 'react-bootstrap/CarouselItem';
+import Button from 'react-bootstrap/Button';
+
 
 {/* <p>
                                 I graduated from the University of Pennsylvania in December 2018. 
@@ -37,11 +39,11 @@ class About extends Component {
                         <Nav.Link href="#pricing">Pricing</Nav.Link> */}
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">ABOUT</Nav.Link>
-                            <Nav.Link eventKey={2} href="#work">
+                            <Nav.Link href="#about">ABOUT</Nav.Link>
+                            <Nav.Link eventKey={2} href="#down">
                                 WORKS
                             </Nav.Link>
-                            <Nav.Link href="#features">CONTACT</Nav.Link>
+                            <Nav.Link href="#contact">CONTACT</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
@@ -52,12 +54,15 @@ class About extends Component {
 
                         </div>
                         <div className="desc">
-
                             Specializing in building rich interactive web apps
-                            
                         </div>
                         <div className="desc-small">
                             skilled in HTML5, CSS, ES6+ JavaScript, Bootstrap, React, React Hooks, JQuery, Git and MongoDB
+                        </div>
+                        <div className="checkout-btn">
+                            <a href="#down">
+                                <Button variant="dark"> Works </Button>
+                            </a>
                         </div>
                     </div>
 
